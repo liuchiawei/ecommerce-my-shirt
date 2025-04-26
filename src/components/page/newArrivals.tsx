@@ -23,10 +23,10 @@ export default function NewArrivals() {
           {Array.from({ length: 6 }).map((_, index) => (
             <CarouselItem
               key={index}
-              className="basis-1/2 md:basis-1/3 lg:basis-1/4"
+              className="basis-1/2 md:basis-1/3 lg:basis-1/4 cursor-grab active:cursor-grabbing"
             >
               <div className="p-1">
-                <Card>
+                <Card className="cursor-pointer">
                   <CardContent className="flex aspect-square items-center justify-center p-6">
                     <span className="text-3xl font-semibold">{index + 1}</span>
                   </CardContent>
