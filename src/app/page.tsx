@@ -6,12 +6,15 @@ import Featured from '@/components/page/featured'
 import NewArrivals from '@/components/page/newArrivals'
 import News from '@/components/page/news'
 import Stores from '@/components/page/stores'
+import CatchCopy from '@/components/page/catchCopy'
+
 export default function Home() {
   return (
     <div>
       <Nav />
       <main className="w-full flex flex-col gap-20 relative z-10">
         <Hero />
+        <CatchCopy />
         <NewArrivals />
         <News />
         <Featured />
