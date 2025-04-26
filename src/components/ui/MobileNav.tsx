@@ -12,7 +12,7 @@ interface NavItemProps {
   href: string;
 }
 
-const navItems: NavItemProps[] = [
+const myNavItems: NavItemProps[] = [
   {
     labelEN: "Home",
     href: "/",
@@ -57,7 +57,7 @@ export default function MobileNav({
         className="w-full md:w-[360px] absolute top-0 right-0 bottom-0 bg-accent/60 backdrop-blur-sm"
       />
       {/* モバイルナビゲーションのコンテンツ */}
-      <Navigation isOpen={isOpen} navItems={navItems} setIsOpen={setIsOpen} />
+      <Navigation isOpen={isOpen} navItems={myNavItems} setIsOpen={setIsOpen} />
       {/* ビゲーションのボタン */}
       <MenuToggle toggle={() => setIsOpen(!isOpen)} />
     </motion.nav>
@@ -79,7 +79,7 @@ const Navigation = ({
   setIsOpen,
 }: {
   isOpen: boolean;
-  navItems: NavItemProps[];
+  navItems?: NavItemProps[];
   setIsOpen: (isOpen: boolean) => void;
 }) => (
   <motion.ul
@@ -88,7 +88,7 @@ const Navigation = ({
       isOpen ? "flex" : "hidden"
     }`}
   >
-    {navItems.map((item, index) => (
+    {navItems?.map((item, index) => (
       <MenuItem key={index} item={item} setIsOpen={setIsOpen} />
     ))}
   </motion.ul>
