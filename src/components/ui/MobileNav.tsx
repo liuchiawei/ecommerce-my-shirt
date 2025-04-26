@@ -22,7 +22,7 @@ const navItems: NavItemProps[] = [
     href: "/about",
   },
   {
-   labelEN: "Shop",
+    labelEN: "Shop",
     href: "/shop",
   },
   {
@@ -111,7 +111,13 @@ const itemVariants: Variants = {
   },
 };
 
-const MenuItem = ({ item, setIsOpen }: { item: NavItemProps, setIsOpen: (isOpen: boolean) => void }) => {
+const MenuItem = ({
+  item,
+  setIsOpen,
+}: {
+  item: NavItemProps;
+  setIsOpen: (isOpen: boolean) => void;
+}) => {
   return (
     <motion.li
       className="cursor-pointer"
