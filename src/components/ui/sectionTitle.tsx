@@ -1,17 +1,17 @@
 'use client'
 
 import { motion } from 'motion/react';
-import DecryptedText from '@/components/DecryptedText';
+import { cn } from '@/lib/utils';
 
-export default function SectionTitle({ text }: { text: string }) {
+export default function SectionTitle({ text, className }: { text: string, className?: string }) {
   return (
     <motion.h2
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
-      className='text-6xl font-black [writing-mode:vertical-rl]'
+      className={cn('text-4xl md:text-6xl font-black [writing-mode:vertical-rl] select-none absolute -top-10 left-2 z-50 drop-shadow-md', className)}
     >
-      <DecryptedText text={text} speed={40} sequential={true} animateOn='view'/>
+      {text}
     </motion.h2>
   )
 }
