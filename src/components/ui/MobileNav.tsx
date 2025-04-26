@@ -9,29 +9,24 @@ import { Button } from "@/components/ui/button";
 
 interface NavItemProps {
   labelEN: string;
-  labelJP: string;
   href: string;
 }
 
 const navItems: NavItemProps[] = [
   {
     labelEN: "Home",
-    labelJP: "ホーム",
     href: "/",
   },
   {
     labelEN: "About",
-    labelJP: "アバウト",
     href: "/about",
   },
   {
    labelEN: "Shop",
-    labelJP: "ショップ",
     href: "/shop",
   },
   {
     labelEN: "Contact",
-    labelJP: "コンタクト",
     href: "/contact",
   },
 ];
