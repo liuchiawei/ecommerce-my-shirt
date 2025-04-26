@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-export default function SNSLinks(className?: string) {
+export default function SNSLinks({ className }: { className?: string }) {
   return (
     <div
       className={cn(
