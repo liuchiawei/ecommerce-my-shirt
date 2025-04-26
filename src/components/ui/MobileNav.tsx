@@ -54,7 +54,7 @@ export default function MobileNav({
       {/* モバイルナビゲーションの背景 */}
       <motion.div
         variants={sidebarVariants}
-        className="w-full md:w-[360px] absolute top-0 right-0 bottom-0 bg-accent/60 backdrop-blur-sm"
+        className="w-full md:w-[360px] h-full absolute top-0 right-0 bottom-0 bg-accent/60 backdrop-blur-sm"
       />
       {/* モバイルナビゲーションのコンテンツ */}
       <Navigation isOpen={isOpen} navItems={myNavItems} setIsOpen={setIsOpen} />

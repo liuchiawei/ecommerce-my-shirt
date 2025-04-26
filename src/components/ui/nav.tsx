@@ -16,10 +16,18 @@ export default function Nav() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
+  if (isMobile) {
+    return (
+      <>
+        <h1 className="absolute top-5 left-1/2 -translate-x-1/2 z-50 text-center text-white text-2xl font-bold select-none">
+          not a Shirt.
+        </h1>
+        <MobileNav />
+      </>
+    );
+  }
   return (
     <div className={`fixed z-50 top-0 flex justify-center md:justify-between items-baseline w-full p-4 gap-6 bg-background shadow-md transition-all duration-300 ${isScrolled ? 'translate-y-0' : 'translate-y-[-100%]'}`}>
-        {isMobile && <MobileNav />}
         <Logo />
         {!isMobile && <DeskNav />}
     </div>
