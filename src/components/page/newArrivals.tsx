@@ -17,7 +17,7 @@ export default function NewArrivals() {
         opts={{
           align: "start",
         }}
-        className="w-full"
+        className="w-full overflow-hidden"
       >
         <CarouselContent>
           {Array.from({ length: 6 }).map((_, index) => (
