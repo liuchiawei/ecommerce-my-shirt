@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div>
       <Nav />
-      <main className="w-full flex flex-col gap-20 relative z-10">
+      <main className="w-full flex flex-col gap-20 relative z-10 overflow-hidden">
         <Hero />
         <CatchCopy />
         <NewArrivals />
