@@ -35,7 +35,7 @@ export default function MobileNav({
   navItems,
   className,
 }: {
-  navItems: NavItemProps[];
+  navItems?: NavItemProps[];
   className?: string;
 }) {
   const [isOpen, setIsOpen] = useState(false);
