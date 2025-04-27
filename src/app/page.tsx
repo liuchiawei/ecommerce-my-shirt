@@ -1,7 +1,6 @@
 import Footer from '@/components/ui/footer'
 import Nav from '@/components/ui/nav'
 import Hero from '@/components/page/hero'
-import About from '@/components/page/about'
 import Featured from '@/components/page/featured'
 import NewArrivals from '@/components/page/newArrivals'
 import News from '@/components/page/news'
@@ -19,7 +18,6 @@ export default function Home() {
         <News />
         <Featured />
         <Stores />
-        <About />
       </main>
       <Footer />
     </div>
