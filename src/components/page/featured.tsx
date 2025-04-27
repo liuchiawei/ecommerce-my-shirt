@@ -1,6 +1,7 @@
 import SectionTitle from "@/components/ui/sectionTitle";
 import HomeCarousel, { CarouselItem } from "@/components/FeatureCarousel";
 
+// TODO: 画像を追加
 const featuredItems: CarouselItem[] = [
   {
     id: 1,

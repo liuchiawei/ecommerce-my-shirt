@@ -4,8 +4,9 @@ import { motion, AnimatePresence } from "motion/react";
 import * as React from "react";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export interface CarouselItem {
   id: number;
@@ -59,7 +60,7 @@ export default function FeatureCarousel({
           className="absolute inset-0"
         >
           <div className="relative w-full h-full">
-            <img
+            <Image
               src={items[currentIndex].image}
               alt={items[currentIndex].title}
               className="w-full h-full object-cover"

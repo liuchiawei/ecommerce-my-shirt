@@ -20,6 +20,7 @@ export default function NewArrivals() {
         className="w-full"
       >
         <CarouselContent className="pl-0 md:pl-20">
+          {/* TODO: 商品画像を追加 */}
           {Array.from({ length: 6 }).map((_, index) => (
             <CarouselItem
               key={index}
@@ -28,12 +29,13 @@ export default function NewArrivals() {
               <div className="p-1">
                 <Card className="cursor-pointer">
                   <CardContent className="flex aspect-square items-center justify-center bg-red-500">
+                    {/* TODO: 商品画像を追加 */}
                     <span className="text-5xl font-semibold">{index + 1}</span>
                   </CardContent>
                   <CardFooter>
-                    <h2 className="text-xl font-bold">
-                      {index + 1}
-                    </h2>
+                    {/* TODO: 商品名を追加 */}
+                    <h2 className="text-xl font-bold">{index + 1}</h2>
+                    {/* TODO: 商品価格を追加 */}
                     <h3 className="text-sm text-foreground/50">
                       ￥ {index + 1} (税込)
                     </h3>
