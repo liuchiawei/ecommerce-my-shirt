@@ -21,7 +21,7 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    "types": ["@react-three/fiber", "@react-three/drei"],
+    "types": ["react", "react-dom", "@react-three/fiber", "@react-three/drei"],
     "jsxImportSource": "react",
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true
