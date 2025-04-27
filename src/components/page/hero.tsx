@@ -4,7 +4,7 @@ import SlideUpLetters from "@/components/SlideUpLetters";
 
 export default function Hero() {
   return (
-    <div className="relative w-full h-screen z-0">
+    <div className="relative w-full h-screen z-0 shadow-md shadow-foreground/20">
       <Waves backgroundColor="black" lineColor="white" />
       <SlideUpLetters
         text="触れる奇跡 。"

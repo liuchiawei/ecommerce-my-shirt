@@ -25,7 +25,7 @@ export default function Nav() {
     );
   }
   return (
-    <div className={`fixed z-50 top-0 flex justify-center md:justify-between items-baseline w-full p-4 gap-6 bg-background shadow-md transition-all duration-300 ${isScrolled ? 'translate-y-0' : 'translate-y-[-100%]'}`}>
+    <div className={`fixed z-50 top-0 flex justify-center md:justify-between items-baseline w-full p-4 gap-6 bg-background shadow-md shadow-foreground/20 transition-all duration-300 ${isScrolled ? 'translate-y-0' : 'translate-y-[-100%]'}`}>
         <Logo />
         {!isMobile && <DeskNav />}
     </div>
