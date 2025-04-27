@@ -64,7 +64,7 @@ export default function FeatureCarousel({
               alt={items[currentIndex].title}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-background/80 to-transparent" />
+            <div className="absolute inset-0 bg-red-500 mask-r-from-30%" />
             <div className="absolute inset-0 flex items-end p-8 md:p-12">
               <div className="max-w-2xl space-y-4">
                 <motion.h2

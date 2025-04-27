@@ -19,9 +19,7 @@ export default function Nav() {
   if (isMobile) {
     return (
       <>
-        <h1 className="absolute top-5 left-1/2 -translate-x-1/2 z-50 text-center text-white text-2xl font-bold select-none">
-          not a Shirt.
-        </h1>
+        <Logo />
         <MobileNav />
       </>
     );
