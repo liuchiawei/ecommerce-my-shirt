@@ -8,7 +8,7 @@ export default function Hero() {
       <Waves backgroundColor="black" lineColor="white" />
       <SlideUpLetters
         text="触れる奇跡 。"
-        className="text-center text-white text-5xl font-black absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 text-shadow-lg select-none"
+        className="text-center text-white text-3xl md:text-5xl font-black absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 text-shadow-xl select-none"
       />
       <h3 className="absolute top-1/2 left-8 -translate-y-1/2 z-50 text-center text-white text-shadow-lg text-sm [writing-mode:vertical-rl] [word-spacing:0.2em] tracking-widest select-none">
         not only a shirt.
