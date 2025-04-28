@@ -5,22 +5,22 @@ import FeatureCarousel, { CarouselItem } from "@/components/FeatureCarousel";
 const featuredItems: CarouselItem[] = [
   {
     id: 1,
-    title: "Featured Item 1",
-    description: "This is the first featured item",
+    title: "シンプルなデザイン",
+    description: "シンプルなデザインです。",
     image: "/images/feature_1.jpg",
     link: "/featured-1",
   },
   {
     id: 2,
-    title: "Featured Item 2",
-    description: "This is the second featured item",
+    title: "舒適性が高い",
+    description: "シンプルなデザインです。",
     image: "/images/feature_2.jpg",
     link: "/featured-2",
   },
   {
     id: 3,
-    title: "Featured Item 3",
-    description: "This is the third featured item",
+    title: "高品質な素材",
+    description: "100%の綿で作られています。",
     image: "/images/feature_3.jpg",
     link: "/featured-3",
   },
