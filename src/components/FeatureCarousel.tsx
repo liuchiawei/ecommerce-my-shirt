@@ -63,16 +63,17 @@ export default function FeatureCarousel({
             <Image
               src={items[currentIndex].image}
               alt={items[currentIndex].title}
+              width={1200}
+              height={1200}
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-red-500 mask-r-from-30%" />
             <div className="absolute inset-0 flex items-end p-8 md:p-12">
               <div className="max-w-2xl space-y-4">
                 <motion.h2
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2 }}
-                  className="text-2xl md:text-4xl font-bold text-foreground"
+                  className="text-2xl md:text-4xl font-bold text-foreground text-white text-shadow-lg"
                 >
                   {items[currentIndex].title}
                 </motion.h2>
@@ -80,7 +81,7 @@ export default function FeatureCarousel({
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
-                  className="text-lg md:text-xl text-foreground/80"
+                  className="text-lg md:text-xl text-gray-200 text-shadow-md"
                 >
                   {items[currentIndex].description}
                 </motion.p>

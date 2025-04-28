@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import {
   Carousel,
@@ -8,6 +9,46 @@ import {
 } from "@/components/ui/carousel";
 import SectionTitle from "@/components/ui/sectionTitle";
 import PageButton from "../ui/pageButton";
+
+interface NewArrivalsItemProps {
+  id: number;
+  image: string;
+  name: string;
+  price: number;
+}
+
+const newArrivalsItems: NewArrivalsItemProps[] = [
+  {
+    id: 1,
+    image: "/images/product_1.jpg",
+    name: "ダブルブレストスーツ",
+    price: 248000,
+  },
+  {
+    id: 2,
+    image: "/images/product_2.jpg",
+    name: "シングルブレストスーツ",
+    price: 262000,
+  },
+  {
+    id: 3,
+    image: "/images/product_3.jpg",
+    name: "ワイドTシャツ",
+    price: 4800,
+  },
+  {
+    id: 4,
+    image: "/images/product_4.jpg",
+    name: "ストライプネクタイ",
+    price: 3600,
+  },
+  {
+    id: 5,
+    image: "/images/product_5.jpg",
+    name: "レディースニットタートルネック",
+    price: 8800,
+  },
+];
 
 export default function NewArrivals() {
   return (
@@ -20,24 +61,26 @@ export default function NewArrivals() {
         className="w-full"
       >
         <CarouselContent className="pl-0 md:pl-20">
-          {/* TODO: 商品画像を追加 */}
-          {Array.from({ length: 6 }).map((_, index) => (
+          {newArrivalsItems.map((item) => (
             <CarouselItem
-              key={index}
+              key={item.id}
               className="basis-1/2 md:basis-1/3 lg:basis-1/4 cursor-grab active:cursor-grabbing"
             >
               <div className="p-1">
                 <Card className="cursor-pointer">
-                  <CardContent className="flex aspect-square items-center justify-center bg-red-500">
-                    {/* TODO: 商品画像を追加 */}
-                    <span className="text-5xl font-semibold">{index + 1}</span>
+                  <CardContent className="flex aspect-square items-center justify-center bg-stone-200 dark:bg-stone-300 overflow-hidden p-6">
+                    <Image
+                      src={item.image}
+                      alt={item.name}
+                      width={600}
+                      height={600}
+                      className="h-full w-full object-contain hover:scale-110 hover:brightness-105 transition-all duration-300"
+                    />
                   </CardContent>
                   <CardFooter>
-                    {/* TODO: 商品名を追加 */}
-                    <h2 className="text-xl font-bold">{index + 1}</h2>
-                    {/* TODO: 商品価格を追加 */}
+                    <h2 className="text-xl font-bold mb-2">{item.name}</h2>
                     <h3 className="text-sm text-foreground/50">
-                      ￥ {index + 1} (税込)
+                      ￥ {item.price} (税込)
                     </h3>
                   </CardFooter>
                 </Card>
